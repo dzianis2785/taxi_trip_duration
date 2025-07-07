@@ -1,10 +1,6 @@
 # Project Description
 
-This project is dedicated to predicting the duration of taxi rides in New York City using various regression models.
-
-The project *Project-1: Resume Analysis on HeadHunter* is located at this link:
-
-`Skillfactory/Project-1_Анализ_резюме_на _HeadHanter/Project-1.ipynb`
+This project is dedicated to predicting the duration of taxi rides in New York City using various regression models
 
 All datasets used in the project are stored on Google Drive and are available via the link:
 
