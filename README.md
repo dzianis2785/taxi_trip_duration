@@ -1,8 +1,12 @@
+![](./images/project.jpg) 
+
 # NYC Taxi Trip Duration
 
 This project predicts the duration of taxi rides in New York City using supervised regression models.
 
-The work is implemented in the Jupyter notebook [`NYC_Taxi_Project.ipynb`](NYC_Taxi_Project.ipynb) and expects the dataset at [`data/data.csv`](data/data.csv).
+The work is implemented in the Jupyter notebook [`NYC_Taxi_Project.ipynb`](NYC_Taxi_Project.ipynb). 
+
+- **Note**: the raw CSV is kept outside version control because of its size. Place it at [here](https://drive.google.com/file/d/1X_EJEfERiXki0SKtbnCL9JDv49Go14lF/view) before running the notebook.
 
 ## Project Goal
 
@@ -21,8 +25,6 @@ The notebook expands these raw fields with additional features such as:
 - geospatial distance features
 - weather-related features
 - cluster-based location features
-
-Note: the raw CSV is kept outside version control because of its size. Place it at `data/data.csv` before running the notebook.
 
 ## Workflow
 
@@ -57,23 +59,26 @@ According to the notebook, the best validation performance was achieved by `Grad
 
 Feature importance is also analyzed for the final tree-based model.
 
+![Feature importance](images/importances.png)
+
 ## Repository Structure
 
-- [`NYC_Taxi_Project.ipynb`](NYC_Taxi_Project.ipynb) - main analysis and modeling notebook
-- [`data/data.csv`](data/data.csv) - input dataset
-- [`requirements.txt`](requirements.txt) - Python dependencies used in the notebook
+- [`NYC_Taxi_Project.ipynb`](NYC_Taxi_Project.ipynb) - main notebook with analysis, feature engineering, and model training
+- [`README.md`](README.md) - project overview and usage notes
+- [`requirements.txt`](requirements.txt) - Python dependencies required to run the notebook
+- [`images/`](images/) - images used in the README
 
-## Setup
+## Installation
 
-Create a virtual environment and install the dependencies:
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+``` bash
+git clone https://github.com/dzianis2785/taxi_trip_duration.git
 ```
 
-Make sure `data/data.csv` is available locally before launching the notebook.
+Install dependencies:
+
+``` bash
+pip install -r requirements.txt
+```
 
 ## Run
 
