@@ -64,9 +64,21 @@ Feature importance is also analyzed for the final tree-based model.
 ## Repository Structure
 
 - [`NYC_Taxi_Project.ipynb`](NYC_Taxi_Project.ipynb) - main notebook with analysis, feature engineering, and model training
+- [`.gitignore`](.gitignore) - ignored files and local environment artifacts
 - [`README.md`](README.md) - project overview and usage notes
 - [`requirements.txt`](requirements.txt) - Python dependencies required to run the notebook
 - [`images/`](images/) - images used in the README
+
+## Using `.gitignore`
+
+The `.gitignore` file tells Git which local files should stay untracked. In this project it already ignores:
+
+- `.DS_Store` files created by macOS
+- `.ipynb_checkpoints/` folders created by Jupyter
+- `__pycache__/` folders created by Python
+- `*.pyc` compiled Python files
+
+If you create new temporary files, logs, or local datasets that should not be committed, add them to `.gitignore` as new lines. Each pattern is matched from the project root, so you can ignore either a specific file name or a whole folder.
 
 ## Installation
 
